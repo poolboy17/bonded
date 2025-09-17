@@ -1,0 +1,6 @@
+openrouter:
+  api_key: ${OPENROUTER_API_KEY}
+  url: https://openrouter.ai/api/v1/chat/completions
+models:
+  scaffold: deepseek/deepseek-chat-v3.1:free
+  hydrate: openai/gpt-5
