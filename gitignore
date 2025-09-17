@@ -18,5 +18,9 @@ logs/
 .vscode/
 .idea/
 
+# Data directory
+data/*.csv
+!data/sample_titles_meta.csv
+
 # Misc
 *.DS_Store
