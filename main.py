@@ -1,4 +1,5 @@
 import argparse, logging, os
+from dotenv import load_dotenv
 import logging_config
 from config import load_config
 from input_loader import load_articles
@@ -24,6 +25,8 @@ def process(entry, cfg, headers, url):
     return entry
 
 if __name__ == '__main__':
+    # Load environment variables from .env
+    load_dotenv()
     parser = argparse.ArgumentParser()
     parser.add_argument('-i', '--input', required=True)
     parser.add_argument('-o', '--output', required=True)
