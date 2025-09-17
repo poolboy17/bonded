@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.eggs/
+*.pyo
+.venv/
+env/
+
+# Logs
+logs/
+*.log
+
+# Config overrides
+*.env
+
+# IDEs
+.vscode/
+.idea/
+
+# Misc
+*.DS_Store
