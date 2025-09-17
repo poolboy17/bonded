@@ -424,7 +424,7 @@ class QualityController:
             recommendations.append(f"Content length is below target. Aim for {self.min_word_count}+ words per article.")
         
         for issue, count in summary['common_issues'].items():
-            if count > len(qc_results) * 0.3:  # More than 30% of articles have this issue
+            if count > summary['total_articles'] * 0.3:  # More than 30% of articles have this issue
                 recommendations.append(f"Address common {issue} issues across {count} articles.")
         
         return recommendations
